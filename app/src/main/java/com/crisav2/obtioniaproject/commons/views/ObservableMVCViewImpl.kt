@@ -2,7 +2,7 @@ package com.crisav2.obtioniaproject.commons.views
 
 import androidx.databinding.ViewDataBinding
 
-class ObservableMVCViewImpl<ListenerType, BindingType: ViewDataBinding>: MVCViewImpl<BindingType>(), ObservableMVCView<ListenerType, BindingType> {
+open class ObservableMVCViewImpl<ListenerType, BindingType: ViewDataBinding>: MVCViewImpl<BindingType>(), ObservableMVCView<ListenerType, BindingType> {
     private val listeners = mutableListOf<ListenerType>()
 
     override fun registerListener(listener: ListenerType) = listeners.add(listener)

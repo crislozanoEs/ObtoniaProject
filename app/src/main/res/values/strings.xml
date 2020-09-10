@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">ObtioniaProject</string>
+    <string name="app_name">Obtionia Project</string>
+    <string name="country_flag">Country_flag</string>
+    <string name="document_number_label">Document Number</string>
+    <string name="password_label">Password</string>
+    <string name="label_login">Welcome to your app!</string>
+    <string name="label__button_login">Login</string>
+    <string name="label_button_problem_login">Problems with login?</string>
 </resources>

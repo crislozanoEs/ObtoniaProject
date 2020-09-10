@@ -17,7 +17,7 @@ open class MVCViewImpl<BindingType: ViewDataBinding>: MVCView<BindingType> {
         binding.lifecycleOwner = owner
     }
 
-    override fun setRootVies(view: View) {
+    override fun setRootView(view: View) {
         this.rootView = view
     }
 }

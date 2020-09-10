@@ -8,6 +8,6 @@ import androidx.lifecycle.LifecycleOwner
 interface MVCView<BindingType: ViewDataBinding> {
     fun getRootView() : View
     fun setLifecycleOwner(owner: LifecycleOwner, binding: BindingType)
-    fun setRootVies(view: View)
+    fun setRootView(view: View)
     fun getContext(): Context
 }
