@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.View
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ViewModel
 
 open class MVCViewImpl<BindingType: ViewDataBinding>: MVCView<BindingType> {
 

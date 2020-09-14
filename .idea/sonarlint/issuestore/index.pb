@@ -1,6 +1,4 @@
 
-|
-Lapp/src/main/java/com/crisav2/obtioniaproject/views/section2/MainActivity.kt,4/c/4c66341e77de8c570c250c906a313f88e99c29b9
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 z
@@ -35,3 +33,13 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
+š
+japp/src/main/java/com/crisav2/obtioniaproject/views/section1/ft00Login/viewModel/LoginFragmentViewModel.kt,0/9/09a2f159238cb04a105abe242741b1d6a7de19fc
+›
+kapp/src/main/java/com/crisav2/obtioniaproject/views/section1/ft00Login/validators/LoginFragmentValidator.kt,3/3/3303e381c692e1a87f443faeea1a9c33407ad60e
+”
+dapp/src/main/java/com/crisav2/obtioniaproject/views/section1/ft00Login/views/LoginFragmentMVCView.kt,1/b/1b888813877e47345349843ad4a494776bc988e0
+˜
+happ/src/main/java/com/crisav2/obtioniaproject/views/section1/ft00Login/views/LoginFragmentMVCViewImpl.kt,6/d/6d52def8a354d0234ac54772cce14e0d8e0c7d50
+’
+bapp/src/main/java/com/crisav2/obtioniaproject/views/section1/ft00Login/controller/LoginFragment.kt,a/9/a99429af208c77e23a5cc72dad4a098ee13ed899

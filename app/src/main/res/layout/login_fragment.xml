@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="loginViewModel"
+            type="com.crisav2.obtioniaproject.views.section1.ft00Login.viewModel.LoginFragmentViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -61,6 +63,7 @@
                         android:background="@drawable/border"
                         android:paddingStart="5dp"
                         android:paddingEnd="@dimen/input_end_padding"
+                        android:text="@{loginViewModel.userLogin.userID}"
                         android:autofillHints="Document" />
                     <TextView
                         android:id="@+id/document_number_label"
@@ -92,6 +95,7 @@
                         android:background="@drawable/border"
                         android:paddingStart="5dp"
                         android:paddingEnd="@dimen/input_end_padding"
+                        android:text="@{loginViewModel.userLogin.userString}"
                         android:autofillHints="Password" />
                     <TextView
                         android:id="@+id/password_label"
@@ -115,6 +119,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/password_container"
                     app:layout_constraintVertical_bias="0.0"
                     android:text="@string/label__button_login"
+                    android:enabled="@{loginViewModel.formValid}"
                     android:textColor="@android:color/white"
                     android:background="@drawable/button_style_default"/>
 
