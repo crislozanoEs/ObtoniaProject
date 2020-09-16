@@ -18,11 +18,15 @@ class LoginFragmentViewModel(private val userValidator: UserValidator): ViewMode
     private var passwordValid = false
     private var userValid = false
 
-    private var _formValid = MutableLiveData<Boolean>()
+    private val _formValid = MutableLiveData<Boolean>()
     val formValid: LiveData<Boolean>
         get() = _formValid
 
-    private var _userLogin = MutableLiveData<LoginUser>()
+    val userIDString = MutableLiveData<String>()
+    val userPasswordString = MutableLiveData<String>()
+
+
+    private val _userLogin = MutableLiveData<LoginUser>()
     val userLogin: LiveData<LoginUser>
         get() = _userLogin
 
@@ -31,10 +35,8 @@ class LoginFragmentViewModel(private val userValidator: UserValidator): ViewMode
        evaluateFormValidation()
     }
 
-    fun validateUserDocument(inputString: String): Int = validateString(FIELD.DOCUMENT, userValidator.validateUserId(inputString))
-
-
-    fun validateUserPassword(): Int = validateString(FIELD.PASSWORD, userValidator.validateUserId(_userLogin.value!!.userString))
+    fun validateUserDocument(): Int = validateString(FIELD.DOCUMENT, userValidator.validateUserId(userIDString.value!!))
+    fun validateUserPassword(): Int = validateString(FIELD.PASSWORD, userValidator.validateUserId(userPasswordString.value!!))
 
 
     private fun validateString(field: FIELD, response: ValidatorResponse): Int{

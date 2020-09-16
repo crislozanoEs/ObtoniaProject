@@ -63,7 +63,7 @@
                         android:background="@drawable/border"
                         android:paddingStart="5dp"
                         android:paddingEnd="@dimen/input_end_padding"
-                        android:text="@{loginViewModel.userLogin.userID}"
+                        android:text="@={loginViewModel.userIDString}"
                         android:autofillHints="Document" />
                     <TextView
                         android:id="@+id/document_number_label"
@@ -95,8 +95,9 @@
                         android:background="@drawable/border"
                         android:paddingStart="5dp"
                         android:paddingEnd="@dimen/input_end_padding"
-                        android:text="@{loginViewModel.userLogin.userString}"
-                        android:autofillHints="Password" />
+                        android:text="@={loginViewModel.userPasswordString}"
+                        android:autofillHints="Password"
+                        android:inputType="textPassword" />
                     <TextView
                         android:id="@+id/password_label"
                         style="@style/defaultLabelStyle"

@@ -11,9 +11,12 @@ interface LoginFragmentMVCView: ObservableMVCView<LoginFragmentMVCView.Listener,
         fun onLoginButtonClicked()
         fun onProblemsLoginButtonClicked()
         fun onFingerprintButtonClicked()
-        fun onDocumentNumberTextChanged(inputString: String)
+        fun onDocumentNumberTextChanged()
+        fun onPasswordTextChanged();
     }
     var binding: LoginFragmentBinding
     fun setLifecycleOwner(lifecycleOwner: LifecycleOwner)
     fun setUserFieldError(error: Int)
+    fun setPasswordFieldError(error: Int)
+    fun setViewModel(viewModel: LoginFragmentViewModel)
 }

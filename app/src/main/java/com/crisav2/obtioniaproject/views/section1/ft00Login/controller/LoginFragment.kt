@@ -26,6 +26,7 @@ class LoginFragment(): BaseFragment(), LoginFragmentMVCView.Listener {
         mvcView = controllerCompositionRoot?.getMVCViewFactory()?.getLoginFragmentMVCView(container, controllerCompositionRoot!!.getErrorsTable())!!
         viewModelFactory = controllerCompositionRoot?.getViewModelFactory()?.getLoginFragmentViewModelFactory(controllerCompositionRoot!!.getUserValidator())!!
         viewModel = ViewModelProvider(this, viewModelFactory).get(LoginFragmentViewModel::class.java)
+        mvcView.setViewModel(viewModel)
         mvcView.setLifecycleOwner(this)
         return mvcView.getRootView()
     }
@@ -52,8 +53,12 @@ class LoginFragment(): BaseFragment(), LoginFragmentMVCView.Listener {
         TODO("Not yet implemented")
     }
 
-    override fun onDocumentNumberTextChanged(inputString: String) {
-        mvcView.setUserFieldError(viewModel.validateUserDocument(inputString))
+    override fun onDocumentNumberTextChanged() {
+        mvcView.setUserFieldError(viewModel.validateUserDocument())
+    }
+
+    override fun onPasswordTextChanged() {
+        mvcView.setPasswordFieldError(viewModel.validateUserPassword())
     }
 
 
