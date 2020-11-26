@@ -1,5 +1,6 @@
 package com.crisav2.obtioniaproject.commons.controllers
 
+import android.app.Fragment
 import androidx.fragment.app.Fragment
 import com.crisav2.obtioniaproject.commons.dependencyInjection.ControllerCompositionRoot
 import com.crisav2.obtioniaproject.views.section1.commons.activity.PublicActivity

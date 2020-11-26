@@ -1,6 +1,6 @@
 package com.crisav2.obtioniaproject.commons
 
-class BaseObservable<TypeObservable> {
+open class BaseObservable<TypeObservable> {
 
     private val listeners = mutableSetOf<TypeObservable>()
 

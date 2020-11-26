@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "454723655339",
+    "firebase_url": "https://obtoniaproject.firebaseio.com",
+    "project_id": "obtoniaproject",
+    "storage_bucket": "obtoniaproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454723655339:android:58da556de29665c37609ee",
+        "android_client_info": {
+          "package_name": "com.crisav2.obtioniaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454723655339-26ca4nd69afi8iok2ilidmm2u8bq9oue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPGEhPzaVSkUsO0lTWNgKY4qHJ2E79m6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454723655339-26ca4nd69afi8iok2ilidmm2u8bq9oue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
